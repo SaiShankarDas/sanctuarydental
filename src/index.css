@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00B4A2;
+  --color-primary-dark: #008f81;
+  --color-secondary: #0B1C2A;
+  --color-secondary-light: #152c40;
+  --color-light-bg: #F4F7F6;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-secondary-light bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-secondary;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
