@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
+import ShnkrDevBadge from './ShnkrDevBadge';
 
 export default function Footer() {
   return (
@@ -68,8 +69,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-gray-200 text-center md:flex md:justify-between items-center text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} Sanctuary Dental. All rights reserved.</p>
+        <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-6">
+          <p className="text-sm text-gray-500 text-center md:text-left opacity-70">
+            © {new Date().getFullYear()} Sanctuary Dental. All rights reserved.
+          </p>
+          <ShnkrDevBadge />
         </div>
       </div>
     </footer>
